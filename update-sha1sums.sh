@@ -17,7 +17,7 @@
 
 filename="proprietary-files.txt"
 filelines="$(cat $filename)"
-vendor="../../../vendor/motorola/taido/proprietary"
+vendor="../../../vendor/lenovo/wt98999/proprietary"
 
 for line in $filelines ; do
     if [[ $line == *"|"* ]]; then

@@ -12,16 +12,16 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, device/motorola/taido/full_taido.mk)
+$(call inherit-product, device/motorola/taido/full_wt98999.mk)
 
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 
-PRODUCT_NAME := lineage_taido
-BOARD_VENDOR := motorola
-PRODUCT_DEVICE := taido
+PRODUCT_NAME := lineage_wt98999
+BOARD_VENDOR := lenovo
+PRODUCT_DEVICE := wt98999
 
-PRODUCT_GMS_CLIENTID_BASE := android-motorola
+PRODUCT_GMS_CLIENTID_BASE := android-lenovo
 
 PRODUCT_MANUFACTURER := motorola
 PRODUCT_MODEL := Moto E³ POWER

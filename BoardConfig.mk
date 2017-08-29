@@ -13,10 +13,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-DEVICE_PATH := device/motorola/taido
+DEVICE_PATH := device/lenovo/wt98999
 
 TARGET_BOARD_PLATFORM := mt6735	
-TARGET_BOOTLOADER_BOARD_NAME := XT1706_S135_161
+#TARGET_BOOTLOADER_BOARD_NAME := XT1706_S135_161 #TBD
 
 # Architecture
 TARGET_ARCH := arm
@@ -32,7 +32,7 @@ TARGET_SYSTEM_PROP := $(DEVICE_PATH)/system.prop
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/fstab.mt6735
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := taido,taido_row
+TARGET_OTA_ASSERT_DEVICE := wt98999,wt98999_row
 
 # Audio
 # USE_CUSTOM_AUDIO_POLICY := 1
@@ -44,13 +44,13 @@ TARGET_NO_BOOTLOADER := true
 # Kernel
 TARGET_KERNEL_ARCH := arm
 BOARD_KERNEL_IMAGE_NAME := zImage-dtb
-TARGET_KERNEL_SOURCE := kernel/motorola/mt6735
-TARGET_KERNEL_CONFIG := lineageos_taido_defconfig
+TARGET_KERNEL_SOURCE := kernel/lenovo/mt6735
+TARGET_KERNEL_CONFIG := lineageos_wt98999_defconfig
 BOARD_KERNEL_BASE := 0x40000000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_RAMDISK_OFFSET := 0x04000000
 BOARD_TAGS_OFFSET := 0xE000000
-BOARD_KERNEL_CMDLINE += bootopt=64S3,32N2,32N2
+#BOARD_KERNEL_CMDLINE += bootopt=64S3,32N2,32N2 #TBD
 ifeq ($(WITH_PERMISSIVE), true)
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 endif
@@ -112,7 +112,7 @@ else
 endif
 
 # RIL
-BOARD_RIL_CLASS := ../../../device/motorola/taido/ril
+BOARD_RIL_CLASS := ../../../device/lenovo/wt98999/ril
 
 # SELinux
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy

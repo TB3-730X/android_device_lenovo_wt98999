@@ -1,6 +1,6 @@
 [
   {
-    "repository": "android_kernel_motorola_mt6735",
-    "target_path": "kernel/motorola/mt6735"
+    "repository": "android_kernel_lenovo_mt6735",
+    "target_path": "kernel/lenovo/mt6735"
   }
 ]

@@ -18,8 +18,8 @@
 set -e
 
 # Required!
-DEVICE=taido
-VENDOR=motorola
+DEVICE=wt98999
+VENDOR=lenovo
 
 # Load extractutils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"

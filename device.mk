@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-VENDOR_BLOBS ?= vendor/motorola/taido/taido-vendor.mk
+VENDOR_BLOBS ?= vendor/lenovo/wt98999/wt98999-vendor.mk
 $(call inherit-product-if-exists, $(VENDOR_BLOBS))
 
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
