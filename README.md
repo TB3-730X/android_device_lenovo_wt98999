@@ -1,5 +1,8 @@
 # Lenovo TB3-730X Device tree
 This is the device tree for the Lenovo TB3-730X.
+
+<img width="654" height="443" alt="17934454434037826396027524649844" src="https://github.com/user-attachments/assets/48aa4d1e-4c80-434b-8fc2-3b9f540ff21d" />
+
 ## Specs:
 
 | Specification | Details |
