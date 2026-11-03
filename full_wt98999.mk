@@ -14,7 +14,7 @@
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from taido
+# Inherit from wt98999
 $(call inherit-product, device/lenovo/wt98999/device.mk)
 
 PRODUCT_DEVICE := wt98999
