@@ -14,7 +14,7 @@
 
 $(call inherit-product, device/lenovo/wt98999/full_wt98999.mk)
 
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 
 PRODUCT_NAME := lineage_wt98999
