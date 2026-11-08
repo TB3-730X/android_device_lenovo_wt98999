@@ -1,4 +1,5 @@
 #include <stdint.h>
+#include <stddef.h>
 
 extern "C" {
     bool _ZN7android11AudioSystem24getVoiceUnlockDLInstanceEv(){

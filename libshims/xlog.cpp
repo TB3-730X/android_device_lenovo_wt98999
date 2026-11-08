@@ -1,4 +1,5 @@
 #include <cutils/log.h>
+#include <stdarg.h>
 
 extern "C" {
 
