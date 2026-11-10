@@ -21,3 +21,50 @@ This is the device tree for the Lenovo TB3-730X.
 | Architecture | aarch64 |
 | Original Software | Android |
 | Original Version | 6.0 |
+
+---
+
+# Build ROM
+Use server/virtual with Fedora 45.
+
+Install packages:
+```
+dnf install openjdk-8-jdk android-tools-adb bc bison build-essential curl flex g++-multilib gcc-multilib gnupg gperf imagemagick lib32ncurses5-dev lib32readline-dev lib32z1-dev libesd0-dev liblz4-tool libncurses5-dev libsdl1.2-dev libssl-dev libwxgtk3.0-dev libxml2 libxml2-utils lzop pngcrush rsync schedtool squashfs-tools xsltproc yasm zip zlib1g-dev git wget curl git
+```
+Install repo tool:
+```
+mkdir -p ~/bin
+wget 'https://storage.googleapis.com/git-repo-downloads/repo' -P ~/bin
+chmod +x ~/bin/repo
+git config --global user.name "Your Name"
+git config --global user.email "your@email.com"
+```
+Make android source tree directories:
+```
+mkdir -p ~/your_rom/version/.repo/local_manifests/
+cd ~/your_rom/version
+```
+Clone device tree, kernel and vendor:
+```
+Device tree: GitHub
+Kernel: GitHub
+Vendor: GitLab
+``` 
+Init source tree with AEX sources:
+```
+repo init -u https://github.com/<ROM>/<manifest.git> -b <Android version>
+```
+
+Sync source code from repos:
+```
+repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
+```
+Export some shell functions and make lunch:
+```
+. build/envsetup.sh
+lunch
+```
+Run build:
+```
+mka bacon -j$(nproc --all)
+```
